@@ -67,7 +67,7 @@ header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px, rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
 	cursor: pointer;
 }
 #searchBtn {
@@ -101,7 +101,7 @@ input:focus {
 	background-color: white;
 	border: none;
 	border-radius: 25px;
-	box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+	box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
 	display: grid;
 	place-content: center;
 	user-select: none;
@@ -110,6 +110,7 @@ input:focus {
 }
 #toggle:hover {
 	background-color: #70ddd8;
+	box-shadow: rgba(0, 0, 0, 0.116) 3px 3px 6px 0px inset, rgba(0, 0, 0, 0) -3px -3px 6px 1px inset;
 }
 #toggle:active {
 	transform: translateY(5px);
@@ -196,7 +197,7 @@ footer {
 	margin-left: -10px;
 }
 
-
+/* Made By */
 
 #madeBy {
 	font-size: 0.9rem;
@@ -213,4 +214,48 @@ footer {
 #madeBy svg {
 	width: 21px;
 	fill: white;
+}
+
+/* Media Queries */
+
+@media screen and (width <= 500px) {
+	.container{
+		width: 100vw;
+	}
+	header {
+		width: 80vw;
+	}
+	#madeBy {
+		width: 100vw;
+		font-size: 0.75rem;
+		flex-wrap: wrap;
+	}
+}
+
+@media screen and (width <= 375px) {
+	.container{
+		padding: 35px;
+	}
+	header {
+		width: 80vw;
+	}
+	main {
+		padding-top: 40px;
+	}
+	#tempValue{
+		font-size: 5rem;
+	}
+	#icon {
+		scale: 0.75;
+		margin-top: -30px;
+	}
+	.details span{
+		font-size: 2.5rem;
+	}
+	.details img {
+		width: 125px;
+	}
+	footer {
+		margin-bottom: -50px;
+	}
 }
