@@ -207,6 +207,7 @@ footer {
 	gap: 5px;
 	position: absolute;
 	top: 100%;
+	user-select: none;
 }
 #madeBy a{
 	color: white;
@@ -220,10 +221,13 @@ footer {
 
 @media screen and (width <= 500px) {
 	.container{
-		width: 100vw;
+		width: 98vw;
 	}
 	header {
 		width: 80vw;
+	}
+	main {
+		scale: 0.75;
 	}
 	#madeBy {
 		width: 100vw;
@@ -233,21 +237,8 @@ footer {
 }
 
 @media screen and (width <= 375px) {
-	.container{
-		padding: 35px;
-	}
-	header {
-		width: 80vw;
-	}
 	main {
 		padding-top: 40px;
-	}
-	#tempValue{
-		font-size: 5rem;
-	}
-	#icon {
-		scale: 0.75;
-		margin-top: -30px;
 	}
 	.details span{
 		font-size: 2.5rem;
@@ -257,5 +248,11 @@ footer {
 	}
 	footer {
 		margin-bottom: -50px;
+	}
+}
+
+@media screen and (height <= 700px) {
+	main {
+		height: 55vh;
 	}
 }
