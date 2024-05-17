@@ -1,2 +1,2 @@
-# Template Repository
-Template Repository for using Webpack
+# Mausam
+Weather App using WeatherAPI
